@@ -1,0 +1,143 @@
+body{
+    background-image: url("https://img.freepik.com/vetores-gratis/vetor-de-fundo-digital-na-cor-azul-com-padroes-de-cubo_53876-126702.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+.centralize{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    z-index: 1;
+}
+
+header button {
+    margin: 1px;
+    width: auto;
+}
+
+.year{
+    margin: 10px;
+}
+
+.logo{
+    text-align: center;
+    text-shadow: 10px;
+    position: fixed;
+    margin-left: 10vw;
+    margin-top: 50px;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}.imglogo{max-width: 100%; max-height: 100%;}
+
+.home, .exit{
+    position: fixed;
+    margin-top: 0px;
+    width: 55px;
+    height: 40px;
+    z-index: 3;
+}.home{margin-left: 35vw;}.exit{margin-left: 95vw;}
+
+.menu{
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+    height: 1800px;
+    width: 35%;
+    text-align: left;
+    z-index: 1;
+}
+.options{
+    position: fixed;
+    margin-left: 2vw;
+    margin-top: 25vw;
+    width: 30vw;
+    border-radius: 50%;
+}
+
+
+
+.main{
+    position: absolute;
+    margin-left: 37.5%;
+    margin-top: 50px;
+    width: 60%;
+    min-width: 600px;
+    height: 200vh;
+    background: rgba(132, 39, 39, 0.9);
+    border-radius: 10px;
+}
+.border{
+    position: absolute;
+    width: 99.5%;
+    min-width: 598px;
+    margin-left: 0.25%;
+    margin-top: 2px;
+    height: 99.5%;
+    background: rgba(255, 255, 255, 0);
+    border: solid 2px white;
+    border-radius: 10px;
+}
+
+.form-field{
+    margin-bottom: 10px;
+}
+
+input, button{
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+.loading{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.loading label{
+    font-size: 24px;
+}
+
+.clear{
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+.solid{
+    background: white;
+    border: none;
+    border: 1px solid black
+}
+
+.outline{
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+button[disabled]{
+    opacity: 0.7;
+}
+
+.error{
+    color: white;
+    background: red;
+    display: none;
+}

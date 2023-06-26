@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisGE - OKRs</title>
+    <link rel="icon" href="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" type="image/png">
+</head>
+<body>
+    <header>
+    </header>
+
+    <div class="time-out">
+        <div class="time-in">
+            <p class="time" id="data">00/00/0000</p>
+            <p class="time" id="bimestre">0 Bimestre</p>
+            <p class="time" id="n_sem">Semana 00</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button type="button" class="home" onclick="cancel()">Home</button>
+        <button type="button" class="exit" onclick="logout()">Sair</button>
+
+        <div class="logo">
+            <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
+        </div>
+
+
+        <div class="options">
+            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>        
+            
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="border">
+            <div class="text-range">
+                <input type="number" class="year" id="year" placeholder="Selecione o Ano">
+                <select class="select" id="bim">
+                    <option>--Selecione o Bimestre --</option>
+                    <option value="1">1° Bimestre</option>
+                    <option value="2">2° Bimestre</option>
+                    <option value="3">3° Bimestre</option>
+                    <option value="4">4° Bimestre</option>
+                    <option value="5">5° Bimestre</option>
+                    <option value="6">6° Bimestre</option>
+                </select>
+            </div>
+            <button type="button" onclick="cleartela(), searchyear(),  add()">Pesquisar</button>
+
+            <p class="bimestre" id="bim_title">Selecione qual o bimestre dos OKRs: </p>
+            <div id="text-range">
+                <div class="text-range">
+                    <p class="cab">Objetivo (O):</p>
+                    <p class="cab">Resultados Chave (KR):</p>
+                    <p class="cab">Estado de Conclusão (%):</p>
+                </div>
+                <div class="text-range">
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o objetivo ..." id="bO1" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO1_1" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO1_2" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO1_3" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO1_4" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO1_5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKRSel">
+                        <div>
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr01_1" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr01_2" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr01_3" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr01_4" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr01_5" value="0">
+                        </div>
+                    </div>
+                    <div class="OKRvisor">
+                        <p class="percent" id="spkr01_1">0%</p>
+                        <p class="percent" id="spkr01_2">0%</p>
+                        <p class="percent" id="spkr01_3">0%</p>
+                        <p class="percent" id="spkr01_4">0%</p>
+                        <p class="percent" id="spkr01_5">0%</p>
+                    </div>
+                </div>
+                
+                <div class="text-range">
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o objetivo ..." id="bO2" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO2_1" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO2_2" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO2_3" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO2_4" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO2_5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKRSel">
+                        <div>
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr02_1" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr02_2" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr02_3" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr02_4" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr02_5" value="0">
+                        </div>
+                    </div>
+                    <div class="OKRvisor">
+                        <p class="percent" id="spkr02_1">0%</p>
+                        <p class="percent" id="spkr02_2">0%</p>
+                        <p class="percent" id="spkr02_3">0%</p>
+                        <p class="percent" id="spkr02_4">0%</p>
+                        <p class="percent" id="spkr02_5">0%</p>
+                    </div>
+                </div>
+
+                <div class="text-range">
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o objetivo ..." id="bO3" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO3_1" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO3_2" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO3_3" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO3_4" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO3_5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKRSel">
+                        <div>
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr03_1" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr03_2" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr03_3" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr03_4" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr03_5" value="0">
+                        </div>
+                    </div>
+                    <div class="OKRvisor">
+                        <p class="percent" id="spkr03_1">0%</p>
+                        <p class="percent" id="spkr03_2">0%</p>
+                        <p class="percent" id="spkr03_3">0%</p>
+                        <p class="percent" id="spkr03_4">0%</p>
+                        <p class="percent" id="spkr03_5">0%</p>
+                    </div>
+                </div>
+
+                <div class="text-range">
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o objetivo ..." id="bO4" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO4_1" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO4_2" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO4_3" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO4_4" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO4_5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKRSel">
+                        <div>
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr04_1" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr04_2" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr04_3" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr04_4" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr04_5" value="0">
+                        </div>
+                    </div>
+                    <div class="OKRvisor">
+                        <p class="percent" id="spkr04_1">0%</p>
+                        <p class="percent" id="spkr04_2">0%</p>
+                        <p class="percent" id="spkr04_3">0%</p>
+                        <p class="percent" id="spkr04_4">0%</p>
+                        <p class="percent" id="spkr04_5">0%</p>
+                    </div>
+                </div>
+
+                <div class="text-range">
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o objetivo ..." id="bO5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKR">
+                        <div>
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO5_1" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO5_2" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO5_3" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO5_4" class="problem">
+                            <input type="text"placeholder="Digite o resultado chave ..." id="krO5_5" class="problem">
+                        </div>
+                    </div>
+                    <div class="OKRSel">
+                        <div>
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr05_1" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr05_2" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr05_3" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr05_4" value="0">
+                            <input class="inpsel" type="range" min="0" max="100" step="1" id="pkr05_5" value="0">
+                        </div>
+                    </div>
+                    <div class="OKRvisor">
+                        <p class="percent" id="spkr05_1">0%</p>
+                        <p class="percent" id="spkr05_2">0%</p>
+                        <p class="percent" id="spkr05_3">0%</p>
+                        <p class="percent" id="spkr05_4">0%</p>
+                        <p class="percent" id="spkr05_5">0%</p>
+                    </div>
+                </div>
+                <button type="button" onclick="saveOKR()" class="save">Criar OKRs</button>
+                <button type="button" onclick="saveAtualize()" class="save">Atualizar OKRs</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="okr.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../logout.js"></script>
+<script src="../../loading.js"></script>
+<script src="okr.js"></script>
+<script src="saveOKR.js"></script>
+<script src="AddPagaOKR.js"></script>
+<script src="atualizapercent.js"></script>
+<script src="clearcamp.js"></script>
+<script src="blockCreatOKRExistent.js"></script>
+<script src="../../time.js"></script>
+<script src="../../key-document.js"></script>
+<script src="../home/home.js"></script>
+</html>

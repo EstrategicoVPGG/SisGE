@@ -1,0 +1,72 @@
+body{
+    height: 100vh;
+}
+
+
+.main{
+    height: 200vh;
+}
+.border{
+    height: 99.5%;
+}
+ .year{
+    margin: 10px;
+}
+
+.select{
+    margin: 10px;
+}
+
+button{
+    background: rgba(132, 39, 39);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    margin: 3%;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+.text-range{
+    display: flex;
+    flex-direction: row;
+}
+.text-range input{
+    flex: 1;
+}
+
+.bimestre{
+    border: solid 2px white;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin: 5%;
+    width: 15vw;
+}
+.bimestre1{
+    margin:15px 0px 0px 0px;
+    background: white;
+}
+
+ol{
+    padding: 0;
+    list-style-type: none;
+}
+
+ol li {
+    cursor: pointer;
+    background: white;
+    padding: 8px 16px;
+    margin: 2px;
+    border-bottom: 1px solid black;
+}
+
+ol li:hover{
+    opacity: 0.8;
+}
+
+p{
+    margin: 4px 0;
+}

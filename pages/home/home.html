@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisGE - Home</title>
+    <link rel="icon" href="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" type="image/png">
+</head>
+<body>
+    <header>
+    </header>
+
+    <div class="menu">
+        <button type="button" class="home" >Home</button>
+        <button type="button" class="exit" onclick="logout()">Sair</button>
+        <div class="logo">
+            <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
+        </div>
+
+        <div class="options">
+            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>        
+            
+        </div>
+    </div>
+    <main class="main">
+        <div class="border">
+            <div class="center">
+                <p class="title">Bem Vindo ao Sistema de Gerenciamento Estratégico</p>
+            </div>
+            <div class="WhiteLine"></div>
+            <div class="text-range">
+                <div class="artigoL">
+                    <p class="paragrafo">
+                        Estamos aqui para ajudar você, diretor(a), a impulsionar o sucesso da sua diretoria e da empresa como um todo. Nosso sistema foi desenvolvido para facilitar a análise e o monitoramento dos indicadores-chave e metas estratégicas da sua área.
+                    </p>
+                    <p class="paragrafo">
+                        <img src="https://www.douglaslima.com.br/wp-content/uploads/2019/01/08-Cuide-para-n%C3%A3o-esquecer-do-gerenciamento-estrat%C3%A9gico.png" alt="imagem ilustrativa">
+                    </p>
+                    <p class="paragrafo">
+                        Com o nosso sistema, você terá acesso a recursos poderosos que vão otimizar sua gestão estratégica. Realize acompanhamentos semanais personalizados, obtendo uma visão clara do progresso em relação aos objetivos definidos. Nossa plataforma oferece uma página exclusiva para o cadastro e gerenciamento das suas OKRs (Objetivos e Resultados-Chave), permitindo que você estabeleça metas alinhadas à estratégia da empresa.
+                    </p>
+                </div>
+                <div class="artigoL">
+                    <p class="paragrafo">
+                        Em breve, você poderá contar com a funcionalidade de relatórios bimestrais gerados automaticamente, consolidando os dados dos acompanhamentos e OKRs da sua área. Esses relatórios fornecerão insights valiosos para embasar suas decisões estratégicas.
+                    </p>
+                    <div class="grafico_fundo text-range">
+                        <div class="gf" id="gf_1"><p>1° Bi</p></div>
+                        <div class="gf" id="gf_2"><p>2° Bi</p></div>
+                        <div class="gf" id="gf_3"><p>3° Bi</p></div>
+                        <div class="gf" id="gf_4"><p>4° Bi</p></div>
+                        <div class="gf" id="gf_5"><p>5° Bi</p></div>
+                        <div class="gf" id="gf_6"><p>6° Bi</p></div>
+                    </div>
+                    <p class="paragrafo">
+                        Analise o desenvolvimento da empresa a partir da conclusão geral dos OKRs deste ano.
+                    </p>
+                </div>
+            </div>
+            <div class="WhiteLine"></div>
+
+            <div class="artigoC">
+                <p class="paragrafo">
+                    Com o nosso Sistema de Gerenciamento Estratégico, você terá todas as ferramentas necessárias para impulsionar o desempenho da sua diretoria e alcançar os resultados desejados. Estamos ansiosos para ajudá-lo(a) nessa jornada de sucesso e crescimento da nossa empresa!"
+                </p>
+            </div>
+        </div>
+    </main>
+
+   
+
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="home.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="home.js"></script>
+<script src="../../logout.js"></script>
+</html>

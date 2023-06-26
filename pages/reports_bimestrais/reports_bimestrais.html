@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisões e Relatórios - </title>
+    <link rel="icon" href="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" type="image/png">
+</head>
+<body>
+    <header>
+    </header>
+    <div class="menu">
+        <button type="button" class="home" onclick="goToHome()">Home</button>
+        <button type="button" class="exit" onclick="logout()">Sair</button>
+        <div class="logo">
+            <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
+        </div>
+
+        <div class="options">
+            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToReports()" class="selection1">OKRs</button>
+        </div>
+    </div>
+    <main class="main">
+        <div class="border">
+            <div class="center">
+                <p class="title">Em breve os relatórios Bimestrais estarão disponíveis</p>
+            </div>
+        </div>
+    </main>
+    
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="reports_bimestrais.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../logout.js"></script>
+<script src="../../loading.js"></script>
+<script src="reports_bimestrais.js"></script>
+<script src="../home/home.js"></script>
+</html>

@@ -1,0 +1,44 @@
+body{
+    height: 100vh;
+}
+
+form{
+    margin-top: 20px;
+    width: 300px;
+}
+
+.login{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5%;
+    background: rgba(132, 39, 39, 0.95);
+    margin: 10px;
+    width: 340px;
+    height: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.381);
+}
+
+.line{
+    border: solid 2px white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5%;
+    margin-top: 2.5px;
+    width: 330px;
+    height: 290px;
+}
+
+label{
+    margin-right: 250px;
+    color: white;
+}
+input{
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    margin-bottom: 10px;
+}

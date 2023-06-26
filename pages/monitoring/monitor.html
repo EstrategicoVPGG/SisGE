@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisGE - Acompanhamento Semanal</title>
+    <link rel="icon" href="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" type="image/png">
+</head>
+<body>
+    <header>
+    </header>
+
+    <div class="time-out">
+        <div class="time-in">
+            <p class="time" id="data">00/00/0000</p>
+            <p class="time" id="bimestre">0 Bimestre</p>
+            <p class="time" id="n_sem">Semana 00</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button type="button" class="home" onclick="cancel()">Home</button>
+        <button type="button" class="exit" onclick="logout()">Sair</button>
+
+        <div class="logo">
+            <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
+        </div>
+
+
+        <div class="options">
+            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="border">
+            <form>
+                <div class="fomr-field margin">
+                    <!-- Pergunta 01-->
+                    <div class="justify">
+                        <label>1 - SELECIONE ATÉ 05 PROBLEMAS QUE OCORRERAM AO DECORRER DESTA SEMANA E PONTUE QUANTO ESSE PROBLEMA IMPACTA NO DESENVOLVIMENTO DA SUA DIRETORIA:</label>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="problema 01" id="p1_1" class="problem">
+                        <input type="range" min="0" max="100" step="1" id="sp1_1" value="0">
+                        <select class="select" id="ssp1_1">
+                            <option>--Selecione o Tipo de Problema</option>
+                            <option>Comunicação</option>
+                            <option>Organizacional</option>
+                            <option>Sobrecarga de Demandas</option>
+                            <option>Ausência Criativa</option>
+                            <option>Motivação dos Membros</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="problema 02" id="p1_2" class="problem">
+                        <input type="range" min="0" max="100" step="1" id="sp1_2" value="0">
+                        <select class="select" id="ssp1_2">
+                            <option>--Selecione o Tipo de Problema</option>
+                            <option>Comunicação</option>
+                            <option>Organizacional</option>
+                            <option>Sobrecarga de Demandas</option>
+                            <option>Ausência Criativa</option>
+                            <option>Motivação dos Membros</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="problema 03" id="p1_3" class="problem">
+                        <input type="range" min="0" max="100" step="1" id="sp1_3" value="0">
+                        <select class="select" id="ssp1_3">
+                            <option>--Selecione o Tipo de Problema</option>
+                            <option>Comunicação</option>
+                            <option>Organizacional</option>
+                            <option>Sobrecarga de Demandas</option>
+                            <option>Ausência Criativa</option>
+                            <option>Motivação dos Membros</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="problema 04" id="p1_4" class="problem">
+                        <input type="range" min="0" max="100" step="1" id="sp1_4" value="0">
+                        <select class="select" id="ssp1_4">
+                            <option>--Selecione o Tipo de Problema</option>
+                            <option>Comunicação</option>
+                            <option>Organizacional</option>
+                            <option>Sobrecarga de Demandas</option>
+                            <option>Ausência Criativa</option>
+                            <option>Motivação dos Membros</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="problema 05" id="p1_5" class="problem">
+                        <input type="range" min="0" max="100" step="1" id="sp1_5" value="0">
+                        <select class="select" id="ssp1_5">
+                            <option>--Selecione o Tipo de Problema</option>
+                            <option>Comunicação</option>
+                            <option>Organizacional</option>
+                            <option>Sobrecarga de Demandas</option>
+                            <option>Ausência Criativa</option>
+                            <option>Motivação dos Membros</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+
+                    <!-- Pergunta 02-->
+                    <div class="justify">
+                        <label>2 - QUAIS FORAM AS PRINCIPAIS ATIVIDADES  PLANEJADAS E DESENVOLVIDAS DURANTE A SEMANA?</label>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 01" id="p2_1" class="problem">
+                        <select class="select" id="sp2_1">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_1">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 02" id="p2_2" class="problem">
+                        <select class="select" id="sp2_2">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_2">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 03" id="p2_3" class="problem">
+                        <select class="select" id="sp2_3">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_3">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 04" id="p2_4" class="problem">
+                        <select class="select" id="sp2_4">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_4">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 05" id="p2_5" class="problem">
+                        <select class="select" id="sp2_5">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_5">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 06" id="p2_6" class="problem">
+                        <select class="select" id="sp2_6">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_6">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                    <div class="text-range">
+                        <input type="text"placeholder="Atividade 07" id="p2_7" class="problem">
+                        <select class="select" id="sp2_7">
+                            <option>--Nível de Complexidade</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>05</option>
+                            <option>08</option>
+                            <option>13</option>
+                            <option>21</option>
+                        </select>
+                        <select class="select" id="ssp2_7">
+                            <option>--Estado de Conclusão:</option>
+                            <option>Concluído</option>
+                            <option>Não Concluído</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Pergunta 03-->
+                <div class="justify">
+                    <label>3 - LISTE QUAIS FORAM OS PRINCIPAIS ERROS E ACERTOS OCORRIDOS DURANTE ESSA SEMANA:</label>
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_1">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 01" id="p3_1" class="problem">
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_2">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 02" id="p3_2" class="problem">
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_3">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 03" id="p3_3" class="problem">
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_4">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 04" id="p3_4" class="problem">
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_5">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 05" id="p3_5" class="problem">
+                </div>
+                <div class="text-range">
+                    <select class="select" id="sp3_6">
+                        <option>--Selecione</option>
+                        <option>Acerto</option>
+                        <option>Erro</option>
+                    </select>
+                    <input type="text"placeholder="Ação n° 06" id="p3_6" class="problem">
+                </div>
+
+                <!-- Pergunta 04-->
+                <div class="justify">
+                    <label>4 - LISTE QUAIS FORAM OS PRINCIPAIS ERROS E ACERTOS OCORRIDOS DURANTE ESSA SEMANA:</label>
+                </div>
+                <input type="text"placeholder="Se sim, nos conte um pouco mais ..." id="p4" class="problem">
+
+                <!-- Pergunta 05-->
+                <div class="justify">
+                    <label>5 - SENTE QUE SUA DIRETORIA TEM SE DESENVOLVIDO BEM DURANTE ESSA SEMANA?</label>
+                </div>
+                <input type="text"placeholder="Se sim, nos conte um pouco mais ..." id="p5" class="problem">
+
+                <!-- Pergunta 06-->
+                <div class="justify">
+                    <label>6 - COMO VOCÊ TEM SE SENTIDO COM RELAÇÃO A SUA DIRETORIA DURANTE ESSA SEMANA?</label>
+                </div>
+                <input type="text"placeholder="Fique a vontade para nos contar ..." id="p6" class="problem">
+
+                <!-- Pergunta 07-->
+                <div class="justify">
+                    <label>7 - POR FAVOR NOS INFORME SOBRE O SEUS NÍVEIS DE SATISFAÇÃO E ENTROSAMENTO DESTA SEMANA:</label>
+                </div>
+                <div class="text-range">
+                    <p class="fixed">Confiança:</p>
+                    <input type="range" min="0" max="100" step="1" id="sp7_1" value="0">    
+                </div>
+                <div class="text-range">
+                    <p class="fixed">Confortável:</p>
+                    <input type="range" min="0" max="100" step="1" id="sp7_2" value="0">    
+                </div>
+                <div class="text-range">
+                    <p class="fixed">Desafiado:</p>
+                    <input type="range" min="0" max="100" step="1" id="sp7_3" value="0">    
+                </div>
+                <div class="text-range">
+                    <p class="fixed">Bem-estar:</p>
+                    <input type="range" min="0" max="100" step="1" id="sp7_4" value="0">    
+                </div>
+                <div class="text-range">
+                    <p class="fixed">Estrosamento entre os membros:</p>
+                    <input type="range" min="0" max="100" step="1" id="sp7_5" value="0">    
+                </div>
+                
+                <!-- Pergunta 08-->
+                <div class="justify">
+                    <label>8 - AVALIE DE MANEIRA GERAL O DESENVOLVIMENTO DOS MEMBROS DA SUA DIRETORIA ESTA SEMANA:</label>
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_1" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_1" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_2" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_2" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_3" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_3" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_4" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_4" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_5" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_5" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Nome e Sobrenome" id="p8_6" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp8_6" value="0">    
+                </div>
+                <div class="text-range">
+                    <p class="fixed">SEU PRÓPRIO DESENVOLVIMENTO</p>
+                    <input type="range" min="0" max="100" step="1" id="sp8_7" value="0">    
+                </div>
+
+                <!-- Pergunta 09-->
+                <div class="justify">
+                    <label>9 - CITE ATÉ 03 ATIVIDADE OU PROJETOS ESTÃO EM ATRASO ATUALMENTE E O QUANTO ESSE ATRASO ESTÁ ATRAPALHANDO O DESENVOLVIMENTO DA SUA DIRETORIA:</label>
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="1° em atraso" id="p9_1" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp9_1" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="2° em atraso" id="p9_2" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp9_2" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="3° em atraso" id="p9_3" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="sp9_3" value="0">    
+                </div>
+
+
+                <!-- PLANO ESTRATÉGICO-->
+                <div class="titleCenter">
+                    <label>PLANO ESTRATÉGICO</label>
+                </div>
+                <div class="justify">
+                    PE - INFORME O NÍVEL GERAL DE CONCLUSÃO ACERCA DO PLANO DE AÇÃO TOMADO PELA SUA DIRETORIA:
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Ação planejada n° 1" id="pe1" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="spe1_1" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Informe-nos o motivo da ação estar com este nível de conclusão, esteja ela atrasada ou não ..." id="pe1_1" class="problem">
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Ação planejada n° 2" id="pe2" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="spe1_2" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Informe-nos o motivo da ação estar com este nível de conclusão, esteja ela atrasada ou não ..." id="pe1_2" class="problem">
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Ação planejada n° 3" id="pe3" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="spe1_3" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Informe-nos o motivo da ação estar com este nível de conclusão, esteja ela atrasada ou não ..." id="pe1_3" class="problem">
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Ação planejada n° 4" id="pe4" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="spe1_4" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Informe-nos o motivo da ação estar com este nível de conclusão, esteja ela atrasada ou não ..." id="pe1_4" class="problem">
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Ação planejada n° 5" id="pe5" class="problem">
+                    <input type="range" min="0" max="100" step="1" id="spe1_5" value="0">    
+                </div>
+                <div class="text-range">
+                    <input type="text"placeholder="Informe-nos o motivo da ação estar com este nível de conclusão, esteja ela atrasada ou não ..." id="pe1_5" class="problem">
+                </div>
+
+
+                <!-- FEEDBACKS-->
+                <div class="titleCenter">
+                    <label>COMENTÁRIOS E FEEDBACKS:</label>
+                </div>
+                <input type="text"placeholder="Sinta-se livre para fazer comentários e nos dar feedbacks sobre o novo acompanhamento" id="feedback" class="problem">
+
+                <button type="button" class="save" onclick="saveReport()">Salvar e Enviar</button>
+                <button type="button"  onclick="cancel()">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="monitor.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../logout.js"></script>
+<script src="../../loading.js"></script>
+<script src="monitor.js"></script>
+<script src="../../time.js"></script>
+<script src="../../key-document.js"></script>
+<script src="../home/home.js"></script>
+</html>

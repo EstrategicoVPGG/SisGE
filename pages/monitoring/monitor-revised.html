@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisGe - Acompanhamento Semanal - Revisão</title>
+    <link rel="icon" href="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" type="image/png">
+</head>
+<body>
+    <header>
+    </header>
+
+    <div class="time-out">
+        <div class="time-in">
+          <p class="time" id="data">00/00/0000</p>
+          <p class="time" id="bimestre">0 Bimestre</p>
+          <p class="time" id="n_sem">Semana 00</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <button type="button" class="home" onclick="goToHome()">Home</button>
+        <button type="button" class="exit" onclick="logout()">Sair</button>
+
+        <div class="logo">
+            <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
+        </div>
+
+        <div class="options">
+            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="border">
+            <div class="fomr-field margin">
+                <!-- Pergunta 01-->
+                <div class="justify">
+                    <label>1 - PROBLEMAS QUE ATRAPALHARAM O DESENVOLVIMENTO DA DIRETORIA DURANTE ESSA SEMANA:</label>
+                </div>
+                <div class="text-range">
+                    <p id="p1_1" class="resposta"></p>
+                    <div class="resposta">
+                        <div id="gsp1_1" class="graficFundRed"></div>
+                        <p id="sp1_1"></p>
+                    </div>
+                    <p id="ssp1_1" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p1_2" class="resposta"></p>
+                    <div class="resposta">
+                        <div id="gsp1_2" class="graficFundRed"></div>
+                        <p id="sp1_2"></p>
+                    </div>
+                    <p id="ssp1_2" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p1_3" class="resposta"></p>
+                    <div class="resposta">
+                        <div id="gsp1_3" class="graficFundRed"></div>
+                        <p id="sp1_3"></p>
+                    </div>
+                    <p id="ssp1_3" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p1_4" class="resposta"></p>
+                    <div class="resposta">
+                        <div id="gsp1_4" class="graficFundRed"></div>
+                        <p id="sp1_4"></p>
+                    </div>
+                    <p id="ssp1_4" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p1_5" class="resposta"></p>
+                    <div class="resposta">
+                        <div id="gsp1_5" class="graficFundRed"></div>
+                        <p id="sp1_5"></p>
+                    </div>
+                    <p id="ssp1_5" class="resposta"></p>
+                </div>
+                <!-- Pergunta 02-->
+                <div class="justify">
+                    <label>2 - PRINCIPAIS ATIVIDADE PLANEJADAS E DESENVOLVIDAS DURANTE A SEMANA: </label>
+                </div>
+                <div class="text-range">
+                    <p id="p2_1" class="resposta"></p>
+                    <p id="sp2_1" class="resposta"></p>
+                    <p id="ssp2_1" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_2" class="resposta"></p>
+                    <p id="sp2_2" class="resposta"></p>
+                    <p id="ssp2_2" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_3" class="resposta"></p>
+                    <p id="sp2_3" class="resposta"></p>
+                    <p id="ssp2_3" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_4" class="resposta"></p>
+                    <p id="sp2_4" class="resposta"></p>
+                    <p id="ssp2_4" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_5" class="resposta"></p>
+                    <p id="sp2_5" class="resposta"></p>
+                    <p id="ssp2_5" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_6" class="resposta"></p>
+                    <p id="sp2_6" class="resposta"></p>
+                    <p id="ssp2_6" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="p2_7" class="resposta"></p>
+                    <p id="sp2_7" class="resposta"></p>
+                    <p id="ssp2_7" class="resposta"></p>
+                </div>
+                <!-- Pergunta 03-->
+                <div class="justify">
+                    <label>3 - PRINCIPAIS ERROS E ACERTOS DA SEMANA: </label>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_1" class="resposta"></p>
+                    <p id="p3_1" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_2" class="resposta"></p>
+                    <p id="p3_2" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_3" class="resposta"></p>
+                    <p id="p3_3" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_4" class="resposta"></p>
+                    <p id="p3_4" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_5" class="resposta"></p>
+                    <p id="p3_5" class="resposta"></p>
+                </div>
+                <div class="text-range">
+                    <p id="sp3_6" class="resposta"></p>
+                    <p id="p3_6" class="resposta"></p>
+                </div>
+                <!-- Pergunta 04-->
+                <div class="justify">
+                    <label>4 - INOVAÇÕES REALIZADAS PELA DIRETORIA ESSA SEMANA: </label>
+                </div>
+                <p id="p4" class="all"></p>
+                <!-- Pergunta 05-->
+                <div class="justify">
+                    <label>5 - O QUE O DIRETOR SENTIU SOBRE O DESENVOLVIMENTO DA SUA DIRETORIA: </label>
+                </div>
+                <p id="p5" class="all"></p>
+                <!-- Pergunta 06-->
+                <div class="justify">
+                    <label>6 - COMO O DIRETOR SE SENTIU SOBRE SUA DIRETORIA ESSA SEMANA: </label>
+                </div>
+                <p id="p6" class="all"></p>       
+
+                <div class="text-range">
+                    <!-- Pergunta 07-->
+                    <div class="justify">
+                        <label>7 - NÍVEIS DE SATISFAÇÃO DO DIRETOR: </label>
+                        <div class="all">
+                            <div id="gp7_1" class="graficFund">
+                            </div>
+                            <p id="p7_1"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp7_2" class="graficFund">
+                            </div>
+                            <p id="p7_2"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp7_3" class="graficFund">
+                            </div>
+                            <p id="p7_3"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp7_4" class="graficFund">
+                            </div>
+                            <p id="p7_4"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp7_5" class="graficFund">
+                            </div>
+                            <p id="p7_5"></p>
+                        </div>
+                    </div> 
+                    <!-- Pergunta 08-->
+                    <div class="justify">
+                        <label>8 - DESENVOLVIMENTO GERAL DOS MEMBROS: </label>
+                        <div class="all">
+                            <div id="gp8_1" class="graficFund"></div>
+                            <p id="p8_1"></p></div>
+                        <div class="all">
+                            <div id="gp8_2" class="graficFund"></div>
+                            <p id="p8_2"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp8_3" class="graficFund"></div>
+                            <p id="p8_3"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp8_4" class="graficFund"></div>
+                            <p id="p8_4"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp8_5" class="graficFund"></div>
+                            <p id="p8_5"></p>
+                        </div>
+                        <div class="all">
+                            <div id="gp8_6" class="graficFund"></div>
+                            <p id="p8_6"></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pergunta 09-->
+                <div class="justify">
+                    <label>9 - PROJETOS / ATIVIDADES QUE ESTÃO ATRAPALHANDO O DESENVOLVIMENTO DA DIRETORIA: </label>
+                    <div class="text-range">
+                        <p id="p9_1" class="all"></p>
+                        <div class="resposta">
+                            <div id="gp9_1" class="graficFundRed"></div>
+                            <p id="sp9_1"></p>
+                        </div>
+                    </div>
+                    <div class="text-range">
+                        <p id="p9_2" class="all"></p>
+                        <div class="resposta">
+                            <div id="gp9_2" class="graficFundRed"></div>
+                            <p id="sp9_2"></p>
+                        </div>
+                    </div>
+                    <div class="text-range">
+                        <p id="p9_3" class="all"></p>
+                        <div class="resposta">
+                            <div id="gp9_3" class="graficFundRed"></div>
+                            <p id="sp9_3"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PLANO ESTRATÉGICO-->
+                <div class="titleCenter">
+                    <label>PLANO ESTRATÉGICO</label>
+                </div>
+                <div class="justify">
+                    PE - ANDAMENTO DAS AÇÕES PLANEJADAS:
+                </div>
+                <div class="text-range">
+                    <p id="pe1" class="all"></p>
+                    <div class="resposta">
+                        <div id="gpe1" class="graficFund"></div>
+                        <p id="spe1"></p>
+                    </div>
+                </div>
+                <p id="pe1_1" class="all"></p>
+                <div class="text-range">
+                    <p id="pe2" class="all"></p>
+                    <div class="resposta">
+                        <div id="gpe2" class="graficFund"></div>
+                        <p id="spe2"></p>
+                    </div>
+                </div>
+                <p id="pe1_2" class="all"></p>
+                <div class="text-range">
+                    <p id="pe3" class="all"></p>
+                    <div class="resposta">
+                        <div id="gpe3" class="graficFund"></div>
+                        <p id="spe3"></p>
+                    </div>
+                </div>
+                <p id="pe1_3" class="all"></p>
+                <div class="text-range">
+                    <p id="pe4" class="all"></p>
+                    <div class="resposta">
+                        <div id="gpe4" class="graficFund"></div>
+                        <p id="spe4"></p>
+                    </div>
+                </div>
+                <p id="pe1_4" class="all"></p>
+                <div class="text-range">
+                    <p id="pe5" class="all"></p>
+                    <div class="resposta">
+                        <div id="gpe5" class="graficFund"></div>
+                        <p id="spe5"></p>
+                    </div>
+                </div>
+                <p id="pe1_5" class="all"></p>
+
+                <!-- FEEDBACKS-->
+                <div class="titleCenter">
+                    <label>COMENTÁRIOS E FEEDBACKS:</label>
+                </div>
+                <p id="feedback" class="all"></p>
+            </div>   
+        </div>
+    </main>
+</body>
+
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="monitor.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../logout.js"></script>
+<script src="../../loading.js"></script>
+<script src="monitor-revised.js"></script>
+<script src="../home/home.js"></script>
