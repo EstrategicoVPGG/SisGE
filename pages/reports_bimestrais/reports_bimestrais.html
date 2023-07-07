@@ -10,23 +10,383 @@
     <header>
     </header>
     <div class="menu">
-        <button type="button" class="home" onclick="goToHome()">Home</button>
+        <button type="button" class="home" onclick="cancel()">Home</button>
         <button type="button" class="exit" onclick="logout()">Sair</button>
         <div class="logo">
             <img src="https://uploads.brasiljunior.org.br/uploads/ej/image/550/Group_2.2.png" class="imglogo">
         </div>
 
         <div class="options">
-            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
-            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
-            <button type="button" onclick="goToReports()" class="selection1">Relatórios Bimestrais</button>
-            <button type="button" onclick="goToReports()" class="selection1">OKRs</button>
+            <button type="button" onclick="goToMonitoring()" id="preencher_acompanhamento" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" id="acompanhamentos" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
+            <button type="button" onclick="goToOKRs()" id="okrs" class="selection1">OKRs</button>        
         </div>
     </div>
-    <main class="main">
-        <div class="border">
+    <main class="main" id="main">
+        <div class="border" id="border">
             <div class="center">
-                <p class="title">Em breve os relatórios Bimestrais estarão disponíveis</p>
+                <p class="title" id="title1">ENGENHE JR. ANO DE 2023:</p>
+                <div class="WhiteLine"></div>
+                <p class="paragrafoP">
+                    Estes são os resultados principais da Empresa para esse ano. Nesta página você pode encontrar os dados de ações planejadas e concluídas com base na metodologia de níveis de complexidade (1, 2, 3, 5, 8, 13, 21). Além também do número percentual de conclusão dos OKRs gerais da empresa por bimestre.
+                </p>
+                <div class="WhiteLine"></div>
+                <div class="artigoL">
+                    <p class="title">RESULTADOS GERAIS DA EMPRESA:</p>
+                </div>
+                <div class="text-range">
+                    <div class="artigoL">
+                        <div class="tabelaInterna">
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">BIMESTRE:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo">AÇÕES CONCLUÍDAS:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo">TOTAL DE AÇÕES: </p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">1° BI - OKR:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l2">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l2">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">1° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l3">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l3">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">2° BI - OKR: </p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l4">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l4">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">2° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l5">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l5">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">3° BI - OKR: </p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l6">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l6">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">3° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l7">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l7">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">4° BI - OKR: </p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l8">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l8">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">4° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l9">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l9">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">5° BI - OKR: </p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l10">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l10">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l11">5° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l11">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">6° BI - OKR: </p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l12">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l12">--</p>
+                                </div>
+                            </div>
+                            <div class="text-range">
+                                <div class="coluna">
+                                    <p class="paragrafo">6° BI - SEMANAL:</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c2_l13">--</p>
+                                </div>
+                                <div class="coluna">
+                                    <p class="paragrafo" id="c3_l13">--</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="paragrafoP">
+                            Os níveis percentuais apresentados são calculados com base no preenchimento dos formulários e acompanhamentos disponibilizados no sistema. 
+                        </p>
+                        <p class="paragrafoP">
+                            O nível de Bem-Estar é calculado a partir da média aritmética dos níveis de saúde física e mental dos membros. 
+                        </p>
+                        <p class="paragrafoP">
+                            Quanto aos níveis de Comprometimento. Seu calculo é realizado a partir do preenchimento do formulário de Visão Compartilhada disponibilizado aos membros. Para este indicador utiliza-se os scores de relevância [1,2,3,5,8,13,21].
+                        </p>
+                        <p class="paragrafoP">
+                            Percentual de Comprometimento e Capacidade compara os dois indicadores por bimestre, afim de relacionar o alinhamento geral da empresa. Quanto menor a diferença entre os dois, mais sólidos se encontrão os membros da empresa:
+                        </p>
+                        <div class="barraH_Compromiss">
+                            <p>CAPACIDADE</p>
+                        </div>
+                        <div class="barraH_Capacit">
+                            <p>COMPROMETIMENTO</p>
+                        </div>
+                    </div>
+                    <div class="artigoL">
+                        <p class="titleGrafico1">PERCENTUAL DE CONCLUSÃO DE OKR POR BIMESTRE:</p>
+                        <div class="FundoGrafico text-range">
+                            <div class="gf" id="gf1_1"><p>1° Bi</p><p id="tgf1_1">0%</p></div>
+                            <div class="gf" id="gf1_2"><p>2° Bi</p><p id="tgf1_2">0%</p></div>
+                            <div class="gf" id="gf1_3"><p>3° Bi</p><p id="tgf1_3">0%</p></div>
+                            <div class="gf" id="gf1_4"><p>4° Bi</p><p id="tgf1_4">0%</p></div>
+                            <div class="gf" id="gf1_5"><p>5° Bi</p><p id="tgf1_5">0%</p></div>
+                            <div class="gf" id="gf1_6"><p>6° Bi</p><p id="tgf1_6">0%</p></div>     
+                        </div>
+                        <p class="titleGrafico">PERCENTUAL DE AÇÕES CONCLUÍDAS POR BIMESTRE:</p>
+                        <div class="FundoGrafico text-range">
+                            <div class="gfA" id="gf2_1"><p>1° Bi</p><p id="tgf2_1">0%</p></div>
+                            <div class="gfA" id="gf2_2"><p>2° Bi</p><p id="tgf2_2">0%</p></div>
+                            <div class="gfA" id="gf2_3"><p>3° Bi</p><p id="tgf2_3">0%</p></div>
+                            <div class="gfA" id="gf2_4"><p>4° Bi</p><p id="tgf2_4">0%</p></div>
+                            <div class="gfA" id="gf2_5"><p>5° Bi</p><p id="tgf2_5">0%</p></div>
+                            <div class="gfA" id="gf2_6"><p>6° Bi</p><p id="tgf2_6">0%</p></div>     
+                        </div>
+                        <p class="titleGrafico">PERCENTUAL DE BEM-ESTAR:</p>
+                        <div class="FundoGrafico text-range">
+                            <div class="gfB" id="gf3_1"><p>1° Bi</p><p id="tgf3_1">0%</p></div>
+                            <div class="gfB" id="gf3_2"><p>2° Bi</p><p id="tgf3_2">0%</p></div>
+                            <div class="gfB" id="gf3_3"><p>3° Bi</p><p id="tgf3_3">0%</p></div>
+                            <div class="gfB" id="gf3_4"><p>4° Bi</p><p id="tgf3_4">0%</p></div>
+                            <div class="gfB" id="gf3_5"><p>5° Bi</p><p id="tgf3_5">0%</p></div>
+                            <div class="gfB" id="gf3_6"><p>6° Bi</p><p id="tgf3_6">0%</p></div>     
+                        </div>
+                        <p class="titleGrafico">PERCENTUAL DE CAPACIDADE / COMPROMETIMENTO:</p>
+                        <div class="FundoGrafico text-range">
+                            <div class="cgfl" id="gf4_1"><p>1° Bi</p><p id="tgf4_1">0%</p></div>
+                            <div class="cgfr" id="cgf4_1"><p>1° Bi</p><p id="ctgf4_1">0%</p></div>
+                            <div class="cgfl" id="gf4_2"><p>2° Bi</p><p id="tgf4_2">0%</p></div>
+                            <div class="cgfr" id="cgf4_2"><p>2° Bi</p><p id="ctgf4_2">0%</p></div>
+                            <div class="cgfl" id="gf4_3"><p>3° Bi</p><p id="tgf4_3">0%</p></div>
+                            <div class="cgfr" id="cgf4_3"><p>3° Bi</p><p id="ctgf4_3">0%</p></div>
+                            <div class="cgfl" id="gf4_4"><p>4° Bi</p><p id="tgf4_4">0%</p></div>
+                            <div class="cgfr" id="cgf4_4"><p>4° Bi</p><p id="ctgf4_4">0%</p></div>
+                            <div class="cgfl" id="gf4_5"><p>5° Bi</p><p id="tgf4_5">0%</p></div>
+                            <div class="cgfr" id="cgf4_5"><p>5° Bi</p><p id="ctgf4_5">0%</p></div>
+                            <div class="cgfl" id="gf4_6"><p>6° Bi</p><p id="tgf4_6">0%</p></div>
+                            <div class="cgfr" id="cgf4_6"><p>6° Bi</p><p id="ctgf4_6">0%</p></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="generator" id="generator">
+                    <div class="WhiteLine"></div>
+                    <p class="paragrafoP">
+                        Logo a baixo você pode gerar relatórios bimestrais da sua diretoria com base no preenchimento dos acompanhamentos. É importante se basear no indicadores e estatisticas mostradas para entender como está o andamento da sua diretoria.
+                    </p>
+                        <div class="text-range">
+                            <input type="number" class="year" id="year" placeholder="Selecione o Ano">
+                            <select class="select" id="diretoria">
+                                <option>--Selecione a Diretoria --</option>
+                                <option>Comercial</option>
+                                <option>Projetos</option>
+                                <option>Marketing</option>
+                                <option>Presidência</option>
+                                <option>VPGG</option>
+                            </select>
+                            <select class="select" id="bim">
+                                <option>--Selecione o Bimestre --</option>
+                                <option>1° Bimestre</option>
+                                <option>2° Bimestre</option>
+                                <option>3° Bimestre</option>
+                                <option>4° Bimestre</option>
+                                <option>5° Bimestre</option>
+                                <option>6° Bimestre</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="searchYear()">Gerar Relatório Bimestral</button>
+                        <button type="button" class="outline" onclick="creatForm()" id="creat_form">Gerar Formulários de Bem-Estar e Compromisso</button>
+                        <div class="WhiteLine"></div>
+                        <div id="Relatorio">
+                            <p class="paragrafoP">
+                                RESULTADOS RECOLHIDOS NO BIMESTRE:
+                            </p>
+                            <div class="text-range">
+                                <div class="artigoL">
+                                    <p class="title">PROBLEMAS MAIS RECORRENTES:</p>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_1"></div>
+                                        <p class="fixed" id="pp1_1">Problemas não especificados</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_2"></div>
+                                        <p class="fixed" id="pp1_2">Problemas de Comunicação</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_3"></div>
+                                        <p class="fixed" id="pp1_3">Problemas de Organização</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_4"></div>
+                                        <p class="fixed" id="pp1_4">Sobrecarga de Demandas</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_5"></div>
+                                        <p class="fixed" id="pp1_5">Problemas de Criatividade</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_6"></div>
+                                        <p class="fixed" id="pp1_6">Motivação dos Membros</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p1_7"></div>
+                                        <p class="fixed" id="pp1_7">Outros Problemas</p>
+                                    </div>
+                                    <p class="title">AÇÕES CONCLUÍDAS:</p>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p4_1"></div>
+                                        <p class="fixed" id="pp4_1">Ações Concluídas: </p>
+                                    </div>
+                                </div>
+
+                                <div class="artigoL">
+                                    <p class="title">NÍVEIS DE SATISFAÇÃO MÉDIA DO DIRETOR:</p>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p2_1"></div>
+                                        <p class="fixed" id="pp2_1">Confiante</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p2_2"></div>
+                                        <p class="fixed" id="pp2_2">Confortável</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p2_3"></div>
+                                        <p class="fixed" id="pp2_3">Desafiado</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p2_4"></div>
+                                        <p class="fixed" id="pp2_4">Nível de Bem-Estar</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p2_5"></div>
+                                        <p class="fixed" id="pp2_5">Entrosamento entre os membros</p>
+                                    </div>
+                                    <p class="title">DESENVOLVIMENTO GERAL DOS MEMBROS / GERENTES:</p>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p3_1"></div>
+                                        <p class="fixed" id="pp3_1">Desenvolvimento: </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="paragrafoP">
+                                INDICADORES BIMESTRAIS:
+                            </p>
+                            <div class="text-range">
+                                <div class="artigoL">
+                                    <p class="title">VISÃO COMPARTILHADA:</p>
+                                    <p class="paragrafoP">
+                                        Este indicador é calculado a partir da média aritmética das quatro métricas apontadas ao lado e aponta o quão colaborativa estava a diretoria no periódo analisado.
+                                    </p>
+                                    <p class="paragrafoP">
+                                        Para resultados inferiores a 40%, recomenda-se reavaliação da metodologia empregada pela diretoria. Quaisquer resultados inferiores a 20% significam situação crítica na métrica apontada precisa ser remodulada de maneira urgente:
+                                    </p>
+                                </div>
+                                <div class="artigoL">
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p5_1"></div>
+                                        <p class="fixed" id="pp5_1">Ações Concluídas</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p5_2"></div>
+                                        <p class="fixed" id="pp5_2">Desenvolvimento dos Membros</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p5_3"></div>
+                                        <p class="fixed" id="pp5_3">Comprometimento</p>
+                                    </div>
+                                    <div class="barraHorizontal">
+                                        <div class="barraHorizontalFrontal" id="p5_4"></div>
+                                        <p class="fixed" id="pp5_4">Membros Capacitados</p>
+                                    </div>
+                                    <div class="grafic_redondo">
+                                        <div class="grafic_redondo_interno" id="p6_1">
+                                            <p class="fixed_grafic" id="pp6_1">0%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="artigoC">
+                                <div class="barra_Progress" id="barra_progress">SITUAÇÃO: </div>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -43,6 +403,16 @@
 <script src="../../auth-guard.js"></script>
 <script src="../../logout.js"></script>
 <script src="../../loading.js"></script>
-<script src="reports_bimestrais.js"></script>
+<script src="../../time.js"></script>
+<script src="form.js"></script>
+<script src="atualize_OKR.js"></script>
+<script src="atualize_BemEstar.js"></script>
+<script src="atualize_compromisso.js"></script>
+<script src="gen_report_monitor.js"></script>
+<script src="insert_year.js"></script>
+<script src="creat_forms.js"></script>
+<script src="verifica_user.js"></script>
+<script src="../../verifica_function.js"></script>
+<script src="atualize_actions.js"></script>
 <script src="../home/home.js"></script>
 </html>

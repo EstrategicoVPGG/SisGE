@@ -27,10 +27,10 @@
         </div>
 
         <div class="options">
-            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
-            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToMonitoring()" id="preencher_acompanhamento" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" id="acompanhamentos" class="selection1">Acompanhamentos</button>
             <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
-            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>
+            <button type="button" onclick="goToOKRs()" id="okrs" class="selection1">OKRs</button>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
                     <label>1 - PROBLEMAS QUE ATRAPALHARAM O DESENVOLVIMENTO DA DIRETORIA DURANTE ESSA SEMANA:</label>
                 </div>
                 <div class="text-range">
-                    <p id="p1_1" class="resposta"></p>
+                    <p id="p1_1" class="all"></p>
                     <div class="resposta">
                         <div id="gsp1_1" class="graficFundRed"></div>
                         <p id="sp1_1"></p>
@@ -50,7 +50,7 @@
                     <p id="ssp1_1" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p1_2" class="resposta"></p>
+                    <p id="p1_2" class="all"></p>
                     <div class="resposta">
                         <div id="gsp1_2" class="graficFundRed"></div>
                         <p id="sp1_2"></p>
@@ -58,7 +58,7 @@
                     <p id="ssp1_2" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p1_3" class="resposta"></p>
+                    <p id="p1_3" class="all"></p>
                     <div class="resposta">
                         <div id="gsp1_3" class="graficFundRed"></div>
                         <p id="sp1_3"></p>
@@ -66,7 +66,7 @@
                     <p id="ssp1_3" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p1_4" class="resposta"></p>
+                    <p id="p1_4" class="all"></p>
                     <div class="resposta">
                         <div id="gsp1_4" class="graficFundRed"></div>
                         <p id="sp1_4"></p>
@@ -74,7 +74,7 @@
                     <p id="ssp1_4" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p1_5" class="resposta"></p>
+                    <p id="p1_5" class="all"></p>
                     <div class="resposta">
                         <div id="gsp1_5" class="graficFundRed"></div>
                         <p id="sp1_5"></p>
@@ -86,38 +86,38 @@
                     <label>2 - PRINCIPAIS ATIVIDADE PLANEJADAS E DESENVOLVIDAS DURANTE A SEMANA: </label>
                 </div>
                 <div class="text-range">
-                    <p id="p2_1" class="resposta"></p>
-                    <p id="sp2_1" class="resposta"></p>
+                    <p id="p2_1" class="all"></p>
+                    <p id="sp2_1" class="all"></p>
                     <p id="ssp2_1" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_2" class="resposta"></p>
-                    <p id="sp2_2" class="resposta"></p>
+                    <p id="p2_2" class="all"></p>
+                    <p id="sp2_2" class="all"></p>
                     <p id="ssp2_2" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_3" class="resposta"></p>
-                    <p id="sp2_3" class="resposta"></p>
+                    <p id="p2_3" class="all"></p>
+                    <p id="sp2_3" class="all"></p>
                     <p id="ssp2_3" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_4" class="resposta"></p>
-                    <p id="sp2_4" class="resposta"></p>
+                    <p id="p2_4" class="all"></p>
+                    <p id="sp2_4" class="all"></p>
                     <p id="ssp2_4" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_5" class="resposta"></p>
-                    <p id="sp2_5" class="resposta"></p>
+                    <p id="p2_5" class="all"></p>
+                    <p id="sp2_5" class="all"></p>
                     <p id="ssp2_5" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_6" class="resposta"></p>
-                    <p id="sp2_6" class="resposta"></p>
+                    <p id="p2_6" class="all"></p>
+                    <p id="sp2_6" class="all"></p>
                     <p id="ssp2_6" class="resposta"></p>
                 </div>
                 <div class="text-range">
-                    <p id="p2_7" class="resposta"></p>
-                    <p id="sp2_7" class="resposta"></p>
+                    <p id="p2_7" class="all"></p>
+                    <p id="sp2_7" class="all"></p>
                     <p id="ssp2_7" class="resposta"></p>
                 </div>
                 <!-- Pergunta 03-->
@@ -126,27 +126,27 @@
                 </div>
                 <div class="text-range">
                     <p id="sp3_1" class="resposta"></p>
-                    <p id="p3_1" class="resposta"></p>
+                    <p id="p3_1" class="all"></p>
                 </div>
                 <div class="text-range">
                     <p id="sp3_2" class="resposta"></p>
-                    <p id="p3_2" class="resposta"></p>
+                    <p id="p3_2" class="all"></p>
                 </div>
                 <div class="text-range">
                     <p id="sp3_3" class="resposta"></p>
-                    <p id="p3_3" class="resposta"></p>
+                    <p id="p3_3" class="all"></p>
                 </div>
                 <div class="text-range">
                     <p id="sp3_4" class="resposta"></p>
-                    <p id="p3_4" class="resposta"></p>
+                    <p id="p3_4" class="all"></p>
                 </div>
                 <div class="text-range">
                     <p id="sp3_5" class="resposta"></p>
-                    <p id="p3_5" class="resposta"></p>
+                    <p id="p3_5" class="all"></p>
                 </div>
                 <div class="text-range">
                     <p id="sp3_6" class="resposta"></p>
-                    <p id="p3_6" class="resposta"></p>
+                    <p id="p3_6" class="all"></p>
                 </div>
                 <!-- Pergunta 04-->
                 <div class="justify">
@@ -317,5 +317,6 @@
 <script src="../../auth-guard.js"></script>
 <script src="../../logout.js"></script>
 <script src="../../loading.js"></script>
+<script src="../../verifica_function.js"></script>
 <script src="monitor-revised.js"></script>
 <script src="../home/home.js"></script>

@@ -17,10 +17,10 @@
         </div>
 
         <div class="options">
-            <button type="button" onclick="goToMonitoring()" class="selection">Preencher Acompanhamento</button>
-            <button type="button" onclick="goToReports()" class="selection1">Acompanhamentos</button>
+            <button type="button" onclick="goToMonitoring()" id="preencher_acompanhamento" class="selection">Preencher Acompanhamento</button>
+            <button type="button" onclick="goToReports()" id="acompanhamentos" class="selection1">Acompanhamentos</button>
             <button type="button" onclick="goToReports_Bimestrais()" class="selection1">Relatórios Bimestrais</button>
-            <button type="button" onclick="goToOKRs()" class="selection1">OKRs</button>
+            <button type="button" onclick="goToOKRs()" id="okrs" class="selection1">OKRs</button>  
         </div>
     </div>
     <main class="main">
@@ -98,6 +98,7 @@
 <script src="../../auth-guard.js"></script>
 <script src="../../logout.js"></script>
 <script src="../../loading.js"></script>
+<script src="../../verifica_function.js"></script>
 <script src="reports.js"></script>
 <script src="../home/home.js"></script>
 </html>

@@ -264,7 +264,7 @@ function addMonitorsToScreen(monitors){
         gp8_4.style.width = monitors.content.sp8_4 + "%";
         p8_5.innerHTML = monitors.content.p8_5+" "+monitors.content.sp8_5+"%"
         gp8_5.style.width = monitors.content.sp8_5 + "%";
-        p8_6.innerHTML = monitors.content.p8_6+" "+monitors.content.sp8_6+"%"
+        p8_6.innerHTML = "Diretor: "+" "+monitors.content.sp8_6+"%"
         gp8_6.style.width = monitors.content.sp8_6 + "%";
 
         //pergunta 09

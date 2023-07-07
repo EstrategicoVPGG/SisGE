@@ -71,8 +71,8 @@ header button {
     margin-left: 37.5%;
     margin-top: 50px;
     width: 60%;
-    min-width: 600px;
-    height: 200vh;
+    min-width: 750px;
+    height: 265vh;
     background: rgba(132, 39, 39, 0.9);
     border-radius: 10px;
 }

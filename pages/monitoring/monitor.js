@@ -32,6 +32,7 @@ function saveReport(){
 function creatReport(){
     return{
         data: dataFormat,
+        ano: parseFloat(ano),
         semana: parseFloat(numeroSemanaBimestre),
         bimestre: parseFloat(bimestre),
         user: {

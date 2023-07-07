@@ -12,17 +12,17 @@ body{
     margin-top: 50px;
     width: 60%;
     min-width: 600px;
-    height: 3500px;
+    height: 3650px;
     background: rgba(132, 39, 39, 0.9);
     border-radius: 10px;
 }
 .border{
     position: absolute;
     width: 99%;
+    height: 3646px;
     min-width: 598px;
     margin-left: 0.25%;
     margin-top: 2px;
-    height: 3494px;
     background: rgba(255, 255, 255, 0);
     border: solid 2px white;
     border-radius: 10px;
@@ -68,9 +68,8 @@ p{
 .fixed, .resposta, .all{
     text-align: center;
     margin: 10px;
-    height: 40px;
     background: white;
-}.fixed{width: 30%;}.resposta{color: black; font-size: medium;width: 50%;}.all{width: 98%; color: black;}
+}.fixed{width: 30%;height: 40px;}.resposta{color: black; font-size: medium;width: 50%;height: 40px;}.all{width: 98%; color: black;height: auto; min-height: 30px;}
 
 .titleCenter{
     color: white;
@@ -83,6 +82,16 @@ p{
 .select{
     margin-left: 10px;
     height: 40px;
+}
+
+.percent{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: auto;
+
 }
 
 .justify{
