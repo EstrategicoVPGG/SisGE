@@ -78,6 +78,7 @@ const form = {
     B2: () => document.getElementById("B2"),
     C1: () => document.getElementById("C1"),
     C2: () => document.getElementById("C2"),
+    button_enviar: () => document.getElementById("enviar_form"),
 }
 
 function Verifica_diretoria(){

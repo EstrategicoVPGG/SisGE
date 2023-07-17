@@ -21,11 +21,11 @@
         <div class="border">
             <div class="paragrafo">
                 <label>Informe seu None e Sobrenome: </label> 
-                <input type="text" placeholder="* Nome e Sobrenome *" id="name" class="entrada">
+                <input type="text" placeholder="* Nome e Sobrenome *" id="name" onchange="onChangedCamp()" class="entrada">
             </div>
             <div class="paragrafo">
                 <label>Por Favor, nos informe a qual diretoria pertence: </label> 
-                <select class="select" id="diretoria">
+                <select class="select" id="diretoria" onchange="onChangedCamp()">
                     <option>* INFORME SUA DIRETORIA *</option>
                     <option>Comercial</option>
                     <option>Presidência</option>
@@ -42,7 +42,8 @@
                 
                 <div class="paragrafo">
                     <label>Como você avalia sua saúde física neste momento?</label>
-                    <select class="select" id="B1">
+                    <select class="select" id="B1" onchange="onChangedCamp()">
+                        <option>* SELECIONE *</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -57,7 +58,8 @@
                 </div>
                 <div class="paragrafo">
                     <label>Como você avalia sua saúde mental neste momento?</label>
-                    <select class="select" id="B2">
+                    <select class="select" id="B2" onchange="onChangedCamp()">
+                        <option>* SELECIONE *</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -81,7 +83,8 @@
                 
                 <div class="paragrafo">
                     <label>Na escala apontada, como você avalia seu nível de CAPACIDADE dentro da empresa?</label>
-                    <select class="select" id="C1">
+                    <select class="select" id="C1" onchange="onChangedCamp()">
+                        <option>* SELECIONE *</option>
                         <option>1 (Capacidade Extramamente Baixa)</option>
                         <option>2 (Capacidade Muito Baixa)</option>
                         <option>3 (Baixa Capacidade)</option>
@@ -93,7 +96,8 @@
                 </div>
                 <div class="paragrafo">
                     <label>Na escala apontada, como você avalia seu nível de COMPROMETIMENTO dentro da empresa?</label>
-                    <select class="select" id="C2">
+                    <select class="select" id="C2" onchange="onChangedCamp()">
+                        <option>* SELECIONE *</option>
                         <option>1 (Extramente Baixo - Nada Comprometido)</option>
                         <option>2 (Muito Baixo - Quase nenhum Comprometimento)</option>
                         <option>3 (Baixo - Pouco Comprometimento)</option>
@@ -106,7 +110,7 @@
             </form>
             <div class="WhiteLine"></div>
 
-            <button type="button" class="save" onclick="envio_form()">Enviar</button>
+            <button type="button" class="save" id="enviar_form" disabled="true" onclick="envio_form()">Enviar</button>
         </div>
     </main>
 
@@ -122,5 +126,6 @@
 <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
 <script src="../../firebase-init.js"></script>
 <script src="formulario.js"></script>
+<script src="validation_form.js"></script>
 <script src="../../loading.js"></script>
 </html>

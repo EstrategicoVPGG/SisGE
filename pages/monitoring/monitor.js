@@ -233,7 +233,7 @@ const form = {
     sp8_6: () => document.getElementById("sp8_6"),
     sp8_7: () => document.getElementById("sp8_7"),
     //Pergunta 09
-    p9_1: () => document.getElementById("p8_1"),
+    p9_1: () => document.getElementById("p9_1"),
     sp9_1: () => document.getElementById("sp9_1"),
     p9_2: () => document.getElementById("p9_2"),
     sp9_2: () => document.getElementById("sp9_2"),

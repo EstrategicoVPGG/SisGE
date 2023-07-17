@@ -88,7 +88,7 @@ function findMonitors(user){
 
 function addMonitorsToScreen(monitors){
     form.relatorio().style.display = "block";
-    form.main().style.height = 400+"vh";
+    form.main().style.height = 520+"vh";
 
     let bime = 0
 
@@ -496,9 +496,8 @@ function addMonitorsToScreen(monitors){
                 var2 = (total_desenvolvimento/cont_desenvolvimento)
             }
         }
-        alert("Relatório Gerado. Clique em OK para visuáliza-lo")
     })
-    
+    alert("Relatório Gerado. Clique em OK para visuáliza-lo")
 }
 
 
