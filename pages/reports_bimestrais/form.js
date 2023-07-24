@@ -101,6 +101,7 @@ const form = {
     relatorio: () => document.getElementById("Relatorio"),
     generator: () => document.getElementById("generator"),
     creat_form: () => document.getElementById("creat_form"),
+    gerated_form: () => document.getElementById("gerated_form"),
 
     //Problemas Recorrentes
     p1_1: () => document.getElementById("p1_1"),

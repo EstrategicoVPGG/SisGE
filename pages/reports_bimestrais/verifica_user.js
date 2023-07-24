@@ -1,5 +1,6 @@
 form.generator().style.display = "none";
 form.creat_form().style.display = "none";
+form.gerated_form().style.display = "none";
 
 var diretorlog = 0
 var rootlog = 0
@@ -17,5 +18,6 @@ firebase.auth().onAuthStateChanged(user => {
         rootlog = 1
         form.generator().style.display = "block";
         form.creat_form().style.display = "block";
+        form.gerated_form().style.display = "block";
     }
 })

@@ -47,16 +47,16 @@ function findMonitors(user){
         .get()
         .then(snapshot => {
             hideLoading()
-        const monitors = snapshot.docs.map(doc => ({
+            const monitors = snapshot.docs.map(doc => ({
             ...doc.data(),
             uid: doc.id
-        }))
-        addMonitorsToScreen(monitors)
-        })
-        .catch(error => {
-            hideLoading()
-            console.log(error)
-            alert("Erro ao recuperar os acompanhamentos")
+            }))
+            addMonitorsToScreen(monitors)
+            })
+            .catch(error => {
+                hideLoading()
+                console.log(error)
+                alert("Erro ao recuperar os acompanhamentos")
         })
     }
     //Se o usuário é comum, então a busca é feita somente apartir do id dele próprio

@@ -16,6 +16,40 @@ button:hover{
     opacity: 0.8;
 }
 
+.tit{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+.tabela{
+    border: solid white 1px;
+    margin: 5px;
+}
+.text-range{
+    display: flex;
+    flex-direction: row;
+}
+.coluna{
+    width: 16.6%;
+    margin-left: -40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+li{
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    border-bottom: solid white 1px; 
+    border-right: solid white 1px;
+    height: 80px;
+}
+
+
+
 .title{margin-top: 200px;}
 
 .title, .title1{

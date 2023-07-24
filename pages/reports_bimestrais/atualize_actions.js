@@ -50,78 +50,92 @@ function calcularActions(actions){
         if(actions.bimestre == 1){
             //variável de controle para ação 1
             if(actions.content.ssp2_1 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_1 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_1)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_1)
-                }
-                if(actions.content.ssp2_1 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_1)
+                if(actions.content.sp2_1 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_1 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_1)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_1)
+                    }
+                    if(actions.content.ssp2_1 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_1)
+                    }
                 }
             }
 
             //variável de controle para ação 2
             if(actions.content.ssp2_2 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_2 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_2)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_2)
-                }
-                if(actions.content.ssp2_2 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_2)
+                if(actions.content.sp2_2 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_2 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_2)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_2)
+                    }
+                    if(actions.content.ssp2_2 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_2)
+                    }
                 }
             }
 
             //variável de controle para ação 3
             if(actions.content.ssp2_3 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_3 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_3)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_3)
-                }
-                if(actions.content.ssp2_3 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_3)
+                if(actions.content.sp2_3 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_3 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_3)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_3)
+                    }
+                    if(actions.content.ssp2_3 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_3)
+                    }
                 }
             }
 
             //variável de controle para ação 4
             if(actions.content.ssp2_4 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_4 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_4)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_4)
-                }
-                if(actions.content.ssp2_4 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_4)
+                if(actions.content.sp2_4 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_4 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_4)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_4)
+                    }
+                    if(actions.content.ssp2_4 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_4)
+                    }
                 }
             }
             
             //variável de controle para ação 5
             if(actions.content.ssp2_5 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_5 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_5)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_5)
-                }
-                if(actions.content.ssp2_5 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_5)
+                if(actions.content.sp2_5 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_5 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_5)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_5)
+                    }
+                    if(actions.content.ssp2_5 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_5)
+                    }
                 }
             }
 
             //variável de controle para ação 6
             if(actions.content.ssp2_6 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_6 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_6)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_6)
-                }
-                if(actions.content.ssp2_6 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_6)
+                if(actions.content.sp2_6 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_6 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_6)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_6)
+                    }
+                    if(actions.content.ssp2_6 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_6)
+                    }
                 }
             }
 
             //variável de controle para ação 7
             if(actions.content.ssp2_7 != "--Estado de Conclusão:"){
-                if(actions.content.ssp2_7 == "Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_7)
-                    var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_7)
-                }
-                if(actions.content.ssp2_7 == "Não Concluído"){
-                    var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_7)
+                if(actions.content.sp2_7 != "--Nível de Complexidade"){
+                    if(actions.content.ssp2_7 == "Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_7)
+                        var_controle_acerto_1 = var_controle_acerto_1 + parseFloat(actions.content.sp2_7)
+                    }
+                    if(actions.content.ssp2_7 == "Não Concluído"){
+                        var_controle_1 = var_controle_1 + parseFloat(actions.content.sp2_7)
+                    }
                 }
             }
 
@@ -130,7 +144,7 @@ function calcularActions(actions){
         }
 
         //Ações do bimestre 2
-        if(actions.bimestre == 2){
+        if(actions.bimestre == 2 && actions.content.sp2_1 != "--Nível de Complexidade"){
             //variável de controle para ação 1
             if(actions.content.ssp2_1 != "--Estado de Conclusão:"){
                 if(actions.content.ssp2_1 == "Concluído"){
@@ -143,7 +157,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 2
-            if(actions.content.ssp2_2 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_2 != "--Estado de Conclusão:" && actions.content.sp2_2 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_2 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_2)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_2)
@@ -154,7 +168,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 3
-            if(actions.content.ssp2_3 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_3 != "--Estado de Conclusão:" && actions.content.sp2_3 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_3 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_3)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_3)
@@ -165,7 +179,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 4
-            if(actions.content.ssp2_4 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_4 != "--Estado de Conclusão:" && actions.content.sp2_4 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_4 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_4)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_4)
@@ -176,7 +190,7 @@ function calcularActions(actions){
             }
             
             //variável de controle para ação 5
-            if(actions.content.ssp2_5 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_5 != "--Estado de Conclusão:" && actions.content.sp2_5 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_5 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_5)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_5)
@@ -187,7 +201,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 6
-            if(actions.content.ssp2_6 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_6 != "--Estado de Conclusão:" && actions.content.sp2_6 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_6 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_6)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_6)
@@ -198,7 +212,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 7
-            if(actions.content.ssp2_7 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_7 != "--Estado de Conclusão:" && actions.content.sp2_7 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_7 == "Concluído"){
                     var_controle_2 = var_controle_2 + parseFloat(actions.content.sp2_7)
                     var_controle_acerto_2 = var_controle_acerto_2 + parseFloat(actions.content.sp2_7)
@@ -298,7 +312,7 @@ function calcularActions(actions){
         //Ações do bimestre 4
         if(actions.bimestre == 4){
             //variável de controle para ação 1
-            if(actions.content.ssp2_1 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_1 != "--Estado de Conclusão:" && actions.content.sp2_1 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_1 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_1)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_1)
@@ -309,7 +323,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 2
-            if(actions.content.ssp2_2 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_2 != "--Estado de Conclusão:" && actions.content.sp2_2 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_2 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_2)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_2)
@@ -320,7 +334,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 3
-            if(actions.content.ssp2_3 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_3 != "--Estado de Conclusão:" && actions.content.sp2_3 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_3 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_3)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_3)
@@ -331,7 +345,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 4
-            if(actions.content.ssp2_4 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_4 != "--Estado de Conclusão:" && actions.content.sp2_4 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_4 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_4)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_4)
@@ -342,7 +356,7 @@ function calcularActions(actions){
             }
             
             //variável de controle para ação 5
-            if(actions.content.ssp2_5 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_5 != "--Estado de Conclusão:" && actions.content.sp2_5 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_5 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_5)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_5)
@@ -353,7 +367,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 6
-            if(actions.content.ssp2_6 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_6 != "--Estado de Conclusão:" && actions.content.sp2_6 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_6 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_6)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_6)
@@ -364,7 +378,7 @@ function calcularActions(actions){
             }
 
             //variável de controle para ação 7
-            if(actions.content.ssp2_7 != "--Estado de Conclusão:"){
+            if(actions.content.ssp2_7 != "--Estado de Conclusão:" && actions.content.sp2_7 != "--Nível de Complexidade"){
                 if(actions.content.ssp2_7 == "Concluído"){
                     var_controle_4 = var_controle_4 + parseFloat(actions.content.sp2_7)
                     var_controle_acerto_4 = var_controle_acerto_4 + parseFloat(actions.content.sp2_7)

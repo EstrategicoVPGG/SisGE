@@ -412,7 +412,7 @@ function addMonitorsToScreen(monitors){
 
                 //Contador de ações concluídas
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_1 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_1 != "--Estado de Conclusão:" && monitors.content.sp2_1 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_1 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_1)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_1)
@@ -422,7 +422,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_2 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_2 != "--Estado de Conclusão:" && monitors.content.sp2_2 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_2 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_2)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_2)
@@ -432,7 +432,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_3 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_3 != "--Estado de Conclusão:" && monitors.content.sp2_3 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_3 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_3)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_3)
@@ -442,7 +442,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_4 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_4 != "--Estado de Conclusão:" && monitors.content.sp2_4 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_4 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_4)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_4)
@@ -452,7 +452,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_5 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_5 != "--Estado de Conclusão:" && monitors.content.sp2_5 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_5 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_5)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_5)
@@ -462,7 +462,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_6 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_6 != "--Estado de Conclusão:" && monitors.content.sp2_6 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_6 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_6)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_6)
@@ -472,7 +472,7 @@ function addMonitorsToScreen(monitors){
                     }
                 }
                 //Conta as ações concluidas para a seleção 01
-                if(monitors.content.ssp2_7 != "--Estado de Conclusão:"){
+                if(monitors.content.ssp2_7 != "--Estado de Conclusão:" && monitors.content.sp2_7 != "--Nível de Complexidade"){
                     if(monitors.content.ssp2_7 == "Concluído"){
                         actions_acerto = actions_acerto + parseFloat(monitors.content.sp2_7)
                         actions_total = actions_total + parseFloat(monitors.content.sp2_7)
